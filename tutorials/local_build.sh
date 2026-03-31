@@ -72,4 +72,34 @@ elif [[ "$runtimeParameter" == "python311Action" ]]
     rm $(pwd)/core/python311Action/requirements_common.txt
     rm -r $(pwd)/core/python311Action/bin
     rm -r $(pwd)/core/python311Action/lib
+elif [[ "$runtimeParameter" == "python312Action" ]]
+  then
+    echo "Building docker for python312Action."
+    cp $(pwd)/core/requirements_common.txt $(pwd)/core/python312Action/requirements_common.txt
+    cp -r $(pwd)/core/python3Action/bin $(pwd)/core/python312Action/bin
+    cp -r $(pwd)/core/python3Action/lib $(pwd)/core/python312Action/lib
+    docker build -t "$dockerImageTag" $(pwd)/core/python312Action
+    rm $(pwd)/core/python312Action/requirements_common.txt
+    rm -r $(pwd)/core/python312Action/bin
+    rm -r $(pwd)/core/python312Action/lib
+elif [[ "$runtimeParameter" == "python313Action" ]]
+  then
+    echo "Building docker for python313Action."
+    cp $(pwd)/core/requirements_common.txt $(pwd)/core/python313Action/requirements_common.txt
+    cp -r $(pwd)/core/python3Action/bin $(pwd)/core/python313Action/bin
+    cp -r $(pwd)/core/python3Action/lib $(pwd)/core/python313Action/lib
+    docker build -t "$dockerImageTag" $(pwd)/core/python313Action
+    rm $(pwd)/core/python313Action/requirements_common.txt
+    rm -r $(pwd)/core/python313Action/bin
+    rm -r $(pwd)/core/python313Action/lib
+elif [[ "$runtimeParameter" == "python314Action" ]]
+  then
+    echo "Building docker for python314Action."
+    cp $(pwd)/core/requirements_common.txt $(pwd)/core/python314Action/requirements_common.txt
+    cp -r $(pwd)/core/python3Action/bin $(pwd)/core/python314Action/bin
+    cp -r $(pwd)/core/python3Action/lib $(pwd)/core/python314Action/lib
+    docker build -t "$dockerImageTag" $(pwd)/core/python314Action
+    rm $(pwd)/core/python314Action/requirements_common.txt
+    rm -r $(pwd)/core/python314Action/bin
+    rm -r $(pwd)/core/python314Action/lib
 fi
