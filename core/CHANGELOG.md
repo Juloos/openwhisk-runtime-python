@@ -20,6 +20,8 @@
 # Python 3 OpenWhisk Runtime Container
 
 ## Next
+ - update local build script to support Python 3.12 to 3.14
+ - add Python 3.14
  - add Python 3.13
  - update Python 3.9 base image to bookworm
 
