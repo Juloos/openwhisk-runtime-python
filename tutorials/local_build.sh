@@ -35,7 +35,7 @@ do
 done
 
 # Print helperInstructions in case parameters are empty
-if [ -z "$runtimeParameter" ] || [ -z "$dockerImageTag" ] || ( [[ "$runtimeParameter" != "python39Action" ]] && [[ "$runtimeParameter" != "python310Action" ]] && [[ "$runtimeParameter" != "python311Action" ]] )
+if [ -z "$runtimeParameter" ] || [ -z "$dockerImageTag" ] || ( [[ "$runtimeParameter" != "python39Action" ]] && [[ "$runtimeParameter" != "python310Action" ]] && [[ "$runtimeParameter" != "python311Action" ]] && [[ "$runtimeParameter" != "python312Action" ]] && [[ "$runtimeParameter" != "python313Action" ]] && [[ "$runtimeParameter" != "python314Action" ]] )
  then
    echo "Runtime parameter is empty or not supported";
    helperInstructions
